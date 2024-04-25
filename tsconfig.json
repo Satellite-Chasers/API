@@ -1,0 +1,15 @@
+{
+  // Latest version of ts-node is broken w/o this ofc lol
+  "ts-node": { "compilerOptions": { "module": "commonjs" } },
+  "include": ["src"],
+  "exclude": ["node_modules"],
+  "compilerOptions": {
+    "types": ["node"],
+    "outDir": "./dist",
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "esModuleInterop": true,
+    "removeComments": true,
+    "paths": { "~/*": ["./*"] }
+  }
+}
